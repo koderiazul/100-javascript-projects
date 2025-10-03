@@ -1,3 +1,7 @@
+import { router } from "./router/router.js";
 import "./style.css";
 
-document.querySelector("#app").innerHTML = `<h1>Hello World!</h1>`;
+// Run router on first load
+document.addEventListener("DOMContentLoaded", () => {
+  router();
+});
