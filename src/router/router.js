@@ -1,4 +1,5 @@
 import routes from "./routes.js";
+import MainLayout from "../layouts/ProjectLayout.js";
 
 const navigateTo = (url) => {
   history.pushState(null, null, url);
@@ -23,7 +24,9 @@ const router = () => {
     };
   }
 
-  document.querySelector("#app").innerHTML = match.route.view();
+  const pageContent = match.route.view();
+  const layout = match.route.layout || MainLayout;
+  document.querySelector("#app").innerHTML = layout(pageContent);
 
   if (typeof match.route.mount === "function") {
     match.route.mount();

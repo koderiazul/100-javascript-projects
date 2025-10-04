@@ -1,4 +1,6 @@
 import SevenSegClock from "../pages/seven-seg-clock/SevenSegClock";
+import MainLayout from "../layouts/MainLayout.js";
+import ProjectLayout from "../layouts/ProjectLayout.js";
 
 const routes = [
   {
@@ -7,11 +9,13 @@ const routes = [
       <h1>Home Page</h1>
       <p>Welcome to the homepage of our SPA!</p>
     `,
+    layout: MainLayout,
   },
   {
     path: "/seven-seg-clock",
     view: SevenSegClock.view,
     mount: SevenSegClock.mount,
+    layout: ProjectLayout,
   },
   {
     path: "/contact",
