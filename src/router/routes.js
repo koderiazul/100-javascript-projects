@@ -1,3 +1,5 @@
+import SevenSegClock from "../pages/seven-seg-clock/SevenSegClock";
+
 const routes = [
   {
     path: "/",
@@ -7,11 +9,9 @@ const routes = [
     `,
   },
   {
-    path: "/about",
-    view: () => `
-      <h1>About Page</h1>
-      <p>This is a simple single-page app using vanilla JS and Vite.</p>
-    `,
+    path: "/seven-seg-clock",
+    view: SevenSegClock.view,
+    mount: SevenSegClock.mount,
   },
   {
     path: "/contact",

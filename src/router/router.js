@@ -1,11 +1,11 @@
 import routes from "./routes.js";
 
-function navigateTo(url) {
+const navigateTo = (url) => {
   history.pushState(null, null, url);
   router();
-}
+};
 
-function router() {
+const router = () => {
   const potentialMatches = routes.map((route) => ({
     route,
     isMatch: location.pathname === route.path,
@@ -15,12 +15,19 @@ function router() {
 
   if (!match) {
     match = {
-      route: { path: "/404", view: () => "<h1>404 - Page not found</h1>" },
+      route: {
+        path: "/404",
+        view: () => "<h1>404 - Page not found</h1>",
+      },
       isMatch: true,
     };
   }
 
   document.querySelector("#app").innerHTML = match.route.view();
+
+  if (typeof match.route.mount === "function") {
+    match.route.mount();
+  }
 
   document.querySelectorAll("nav a").forEach((link) => {
     if (link.getAttribute("href") === location.pathname) {
@@ -29,7 +36,7 @@ function router() {
       link.classList.remove("active");
     }
   });
-}
+};
 
 window.addEventListener("popstate", router);
 document.addEventListener("click", (e) => {
