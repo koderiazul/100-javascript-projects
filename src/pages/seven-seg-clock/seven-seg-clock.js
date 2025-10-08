@@ -29,7 +29,7 @@ const SevenSegClock = {
                 <span class="seg6"></span>
                 <span class="seg7"></span>
               </div>
-              ${i === 1 || i === 3 ? `<div class="separator"><span class="dot1"></span><span class="dot2"></span></div>` : ""}
+              ${i === 1 || i === 3 ? `<div class="separator"><span></span><span></span></div>` : ""}
             `
           )
           .join("")}
@@ -39,6 +39,7 @@ const SevenSegClock = {
 
   mount: () => {
     const elements = document.querySelectorAll(".seg-digit > span");
+    const seperators = document.querySelectorAll(".separator > span");
 
     const updateSegments = (timeStr) => {
       for (let i = 0; i < timeStr.length; i++) {
@@ -53,6 +54,9 @@ const SevenSegClock = {
           }
         }
       }
+      seperators.forEach((sep) => {
+        sep.style.opacity = 1;
+      });
     };
 
     setInterval(() => {
