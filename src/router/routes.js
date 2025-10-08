@@ -1,6 +1,7 @@
 import SevenSegClock from "../pages/seven-seg-clock/seven-seg-clock.js";
 import MainLayout from "../layouts/main-layout.js";
 import ProjectLayout from "../layouts/project-layout.js";
+import Stopwatch from "../pages/stopwatch/stopwatch.js";
 
 const routes = [
   {
@@ -18,15 +19,10 @@ const routes = [
     layout: ProjectLayout,
   },
   {
-    path: "/contact",
-    view: () => `
-      <h1>Contact Page</h1>
-      <form>
-        <label>Name: <input type="text" /></label><br><br>
-        <label>Email: <input type="email" /></label><br><br>
-        <button type="submit">Send</button>
-      </form>
-    `,
+    path: "/stopwatch",
+    view: Stopwatch.view,
+    mount: Stopwatch.mount,
+    layout: ProjectLayout,
   },
 ];
 
