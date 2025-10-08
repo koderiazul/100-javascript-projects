@@ -1,5 +1,5 @@
 import routes from "./routes.js";
-import MainLayout from "../layouts/ProjectLayout.js";
+import MainLayout from "../layouts/project-layout.js";
 
 const navigateTo = (url) => {
   history.pushState(null, null, url);

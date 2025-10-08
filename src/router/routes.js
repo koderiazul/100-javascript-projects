@@ -1,6 +1,6 @@
-import SevenSegClock from "../pages/seven-seg-clock/SevenSegClock";
-import MainLayout from "../layouts/MainLayout.js";
-import ProjectLayout from "../layouts/ProjectLayout.js";
+import SevenSegClock from "../pages/seven-seg-clock/seven-seg-clock.js";
+import MainLayout from "../layouts/main-layout.js";
+import ProjectLayout from "../layouts/project-layout.js";
 
 const routes = [
   {
