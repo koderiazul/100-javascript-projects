@@ -2,6 +2,7 @@ import SevenSegClock from "../pages/seven-seg-clock/seven-seg-clock.js";
 import MainLayout from "../layouts/main-layout.js";
 import ProjectLayout from "../layouts/project-layout.js";
 import Stopwatch from "../pages/stopwatch/stopwatch.js";
+import ImageGallery from "../pages/image-gallery/image-gallery.js";
 
 const routes = [
   {
@@ -22,6 +23,12 @@ const routes = [
     path: "/stopwatch",
     view: Stopwatch.view,
     mount: Stopwatch.mount,
+    layout: ProjectLayout,
+  },
+   {
+    path: "/image-gallery",
+    view: ImageGallery.view,
+    mount: ImageGallery.mount,
     layout: ProjectLayout,
   },
 ];

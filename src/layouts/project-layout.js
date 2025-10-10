@@ -5,6 +5,7 @@ const ProjectLayout = (content) => `
       <a href="/" data-link>Home</a>
       <a href="/seven-seg-clock" data-link>Clock</a>
       <a href="/stopwatch" data-link>Stopwatch</a>
+      <a href="/image-gallery" data-link>Image Gallery</a>
     </nav>
   </header>
 
