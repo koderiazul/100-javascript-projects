@@ -3,6 +3,7 @@ import MainLayout from "../layouts/main-layout.js";
 import ProjectLayout from "../layouts/project-layout.js";
 import Stopwatch from "../pages/stopwatch/stopwatch.js";
 import ImageGallery from "../pages/image-gallery/image-gallery.js";
+import Calculator from "../pages/calculator/calculator.js";
 
 const routes = [
   {
@@ -29,6 +30,12 @@ const routes = [
     path: "/image-gallery",
     view: ImageGallery.view,
     mount: ImageGallery.mount,
+    layout: ProjectLayout,
+  },
+  {
+    path: "/calculator",
+    view: Calculator.view,
+    mount: Calculator.mount,
     layout: ProjectLayout,
   },
 ];

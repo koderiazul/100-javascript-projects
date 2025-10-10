@@ -6,6 +6,7 @@ const ProjectLayout = (content) => `
       <a href="/seven-seg-clock" data-link>Clock</a>
       <a href="/stopwatch" data-link>Stopwatch</a>
       <a href="/image-gallery" data-link>Image Gallery</a>
+      <a href="/calculator" data-link>Calculator</a>
     </nav>
   </header>
 
