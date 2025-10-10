@@ -25,7 +25,7 @@ const routes = [
     mount: Stopwatch.mount,
     layout: ProjectLayout,
   },
-   {
+  {
     path: "/image-gallery",
     view: ImageGallery.view,
     mount: ImageGallery.mount,

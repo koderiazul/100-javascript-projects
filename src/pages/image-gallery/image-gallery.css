@@ -1,6 +1,6 @@
 .gallery-thumbs {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 10px;
 }
 .thumb {
@@ -9,25 +9,32 @@
   object-fit: cover;
   cursor: pointer;
   border-radius: 8px;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
-.thumb:hover { transform: scale(1.05); }
+.thumb:hover {
+  transform: scale(1.05);
+}
 
 /* lightbox */
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.96);
+  background: rgba(0, 0, 0, 0.96);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
   overflow: hidden;
 }
-.hidden { display: none; }
+.hidden {
+  display: none;
+}
 
 /* Slider wrapper/track */
-.slider-wrapper { width: 100%; overflow: visible; }
+.slider-wrapper {
+  width: 100%;
+  overflow: visible;
+}
 .slider-track {
   display: flex;
   align-items: center;
@@ -50,16 +57,23 @@
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 8px 40px rgba(0,0,0,.6);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
   pointer-events: none;
 }
-.slide.active { transform: scale(1); opacity:1; z-index:10; }
-.slide.prev, .slide.next { opacity:0.8; }
+.slide.active {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 10;
+}
+.slide.prev,
+.slide.next {
+  opacity: 0.8;
+}
 
 /* Navigation Buttons */
 .nav-btn {
   position: absolute;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
   color: #fff;
   font-size: 24px;
@@ -69,7 +83,21 @@
   cursor: pointer;
   z-index: 10000;
 }
-.nav-btn:hover { background: rgba(255,255,255,0.2); }
-.nav-btn.close { top:20px; right:20px; font-size:32px; }
-.nav-btn.prev { left:30px; top:50%; transform: translateY(-50%); }
-.nav-btn.next { right:30px; top:50%; transform: translateY(-50%); }
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.nav-btn.close {
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+}
+.nav-btn.prev {
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-btn.next {
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}

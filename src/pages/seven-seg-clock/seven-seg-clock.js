@@ -30,7 +30,7 @@ const SevenSegClock = {
                 <span class="seg7"></span>
               </div>
               ${i === 1 || i === 3 ? `<div class="separator"><span></span><span></span></div>` : ""}
-            `
+            `,
           )
           .join("")}
       </div>

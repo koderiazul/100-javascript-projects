@@ -37,7 +37,7 @@ const ImageGallery = {
     thumbsEl.innerHTML = images
       .map(
         (src, i) =>
-          `<img src="${src}" data-index="${i}" class="thumb" alt="Image ${i + 1}"/>`
+          `<img src="${src}" data-index="${i}" class="thumb" alt="Image ${i + 1}"/>`,
       )
       .join("");
 
@@ -52,7 +52,7 @@ const ImageGallery = {
     let isAnimating = false;
 
     const slideWidthVW = 60; // width of each slide in vw
-    const sideMarginVW = 2;  // margin between slides
+    const sideMarginVW = 2; // margin between slides
 
     function updateTrack(instant = false) {
       const offset = -currentIndex * (slideWidthVW + sideMarginVW * 2) + 20; // 20vw to center
@@ -106,7 +106,9 @@ const ImageGallery = {
     });
 
     thumbsEl.querySelectorAll(".thumb").forEach((t) => {
-      t.addEventListener("click", () => openLightbox(parseInt(t.dataset.index)));
+      t.addEventListener("click", () =>
+        openLightbox(parseInt(t.dataset.index)),
+      );
     });
 
     closeBtn.addEventListener("click", closeLightbox);
