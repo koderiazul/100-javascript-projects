@@ -5,6 +5,7 @@ import Stopwatch from "../pages/stopwatch/stopwatch.js";
 import ImageGallery from "../pages/image-gallery/image-gallery.js";
 import Calculator from "../pages/calculator/calculator.js";
 import TintShadeMaker from "../pages/tint-shade-maker/tint-shade-maker.js";
+import ColorPicker from "../pages/color-picker/color-picker.js";
 
 const routes = [
   {
@@ -43,6 +44,12 @@ const routes = [
     path: "/tint-shade-maker",
     view: TintShadeMaker.view,
     mount: TintShadeMaker.mount,
+    layout: ProjectLayout,
+  },
+  {
+    path: "/color-picker",
+    view: ColorPicker.view,
+    mount: ColorPicker.mount,
     layout: ProjectLayout,
   },
 ];
