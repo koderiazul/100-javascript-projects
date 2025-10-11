@@ -7,6 +7,7 @@ import Calculator from "../pages/calculator/calculator.js";
 import TintShadeMaker from "../pages/tint-shade-maker/tint-shade-maker.js";
 import ColorPicker from "../pages/color-picker/color-picker.js";
 import MultiplicationTableGenerator from "../pages/multiplication-table-generator/multiplication-table-generator.js";
+import UnitConverter from "../pages/unit-converter/unit-converter.js";
 
 const routes = [
   {
@@ -57,6 +58,12 @@ const routes = [
     path: "/multiplication-table-generator",
     view: MultiplicationTableGenerator.view,
     mount: MultiplicationTableGenerator.mount,
+    layout: ProjectLayout,
+  },
+    {
+    path: "/unit-converter",
+    view: UnitConverter.view,
+    mount: UnitConverter.mount,
     layout: ProjectLayout,
   },
 ];
