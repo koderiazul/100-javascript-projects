@@ -1,0 +1,90 @@
+#table-generator-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+}
+
+#input-section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#input-section input {
+  width: 100px;
+  padding: 0.4rem;
+}
+
+#generate-btn {
+  padding: 0.4rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#generate-btn:hover {
+  background: #0056b3;
+}
+
+#progress {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+#pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+#pagination-controls button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#pagination-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#pagination-controls button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.table-output {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.table-section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.6rem;
+  background: #fafafa;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.table-section h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.table-row {
+  text-align: center;
+  font-size: 0.9rem;
+}

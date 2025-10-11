@@ -6,6 +6,7 @@ import ImageGallery from "../pages/image-gallery/image-gallery.js";
 import Calculator from "../pages/calculator/calculator.js";
 import TintShadeMaker from "../pages/tint-shade-maker/tint-shade-maker.js";
 import ColorPicker from "../pages/color-picker/color-picker.js";
+import MultiplicationTableGenerator from "../pages/multiplication-table-generator/multiplication-table-generator.js";
 
 const routes = [
   {
@@ -50,6 +51,12 @@ const routes = [
     path: "/color-picker",
     view: ColorPicker.view,
     mount: ColorPicker.mount,
+    layout: ProjectLayout,
+  },
+  {
+    path: "/multiplication-table-generator",
+    view: MultiplicationTableGenerator.view,
+    mount: MultiplicationTableGenerator.mount,
     layout: ProjectLayout,
   },
 ];

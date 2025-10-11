@@ -9,6 +9,7 @@ const ProjectLayout = (content) => `
       <a href="/calculator" data-link>Calculator</a>
       <a href="/tint-shade-maker" data-link>Tint Shade Maker</a>
       <a href="/color-picker" data-link>Color Picker</a>
+      <a href="/multiplication-table-generator" data-link>Multiplication Table Generator</a>
     </nav>
   </header>
 
