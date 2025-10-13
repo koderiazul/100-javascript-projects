@@ -11,6 +11,7 @@ const ProjectLayout = (content) => `
       <a href="/color-picker" data-link>Color Picker</a>
       <a href="/multiplication-table-generator" data-link>Multiplication Table Generator</a>
       <a href="/unit-converter" data-link>Unit Converter</a>
+      <a href="/typing-speed-test" data-link>Typing Speed Test</a>
     </nav>
   </header>
 

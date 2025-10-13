@@ -8,6 +8,7 @@ import TintShadeMaker from "../pages/tint-shade-maker/tint-shade-maker.js";
 import ColorPicker from "../pages/color-picker/color-picker.js";
 import MultiplicationTableGenerator from "../pages/multiplication-table-generator/multiplication-table-generator.js";
 import UnitConverter from "../pages/unit-converter/unit-converter.js";
+import TypingSpeedTest from "../pages/typing-speed-test/typing-speed-test.js";
 
 const routes = [
   {
@@ -64,6 +65,12 @@ const routes = [
     path: "/unit-converter",
     view: UnitConverter.view,
     mount: UnitConverter.mount,
+    layout: ProjectLayout,
+  },
+   {
+    path: "/typing-speed-test",
+    view: TypingSpeedTest.view,
+    mount: TypingSpeedTest.mount,
     layout: ProjectLayout,
   },
 ];
