@@ -9,6 +9,7 @@ import ColorPicker from "../pages/color-picker/color-picker.js";
 import MultiplicationTableGenerator from "../pages/multiplication-table-generator/multiplication-table-generator.js";
 import UnitConverter from "../pages/unit-converter/unit-converter.js";
 import TypingSpeedTest from "../pages/typing-speed-test/typing-speed-test.js";
+import Calendar from "../pages/calendar/calendar.js";
 
 const routes = [
   {
@@ -71,6 +72,12 @@ const routes = [
     path: "/typing-speed-test",
     view: TypingSpeedTest.view,
     mount: TypingSpeedTest.mount,
+    layout: ProjectLayout,
+  },
+    {
+    path: "/calendar",
+    view: Calendar.view,
+    mount: Calendar.mount,
     layout: ProjectLayout,
   },
 ];

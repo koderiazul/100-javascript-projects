@@ -12,6 +12,7 @@ const ProjectLayout = (content) => `
       <a href="/multiplication-table-generator" data-link>Multiplication Table Generator</a>
       <a href="/unit-converter" data-link>Unit Converter</a>
       <a href="/typing-speed-test" data-link>Typing Speed Test</a>
+      <a href="/calendar" data-link>Calendar</a>
     </nav>
   </header>
 
