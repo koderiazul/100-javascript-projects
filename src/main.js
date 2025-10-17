@@ -1,7 +1,5 @@
-import { router } from "./router/router.js";
-import "./style.css";
+import { renderRoute } from './router/router.js';
 
-// Run router on first load
-document.addEventListener("DOMContentLoaded", () => {
-  router();
+window.addEventListener('DOMContentLoaded', () => {
+  renderRoute();
 });
